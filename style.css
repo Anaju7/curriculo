@@ -1,69 +1,69 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #eeeeee;
+
+.container {
+    width: 100vw;
+    height: 100%;
+    background: #eff9f2;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
-    font-family:'Open Sans', 'Helvetica Neue', sans-serif;   
-}
-
-.container{
-    width: 80%;
+    flex-direction: column;
     text-align: center;
-    justify-content: center;
-
+    align-items: center;
 }
 
-header{
-    color: #336d88;
-    font-size: 20px;
-    margin: 40px;
-    padding:30px 50px ; 
-    
+.container h1 {
+    font-size: 2rem;
+    padding: 10px;
+    color: #006a71;
 }
 
-
-aside {
-    padding-top: 70px;
-    width: 20%;
-    height: 110vh;
-    background:#89c9b8;
-    text-align: center;
+.container h2 {
+    font-family: 'belgrano', sans serif;
+    font-size: 1.2rem;
+    color: #03674f;
+    padding: 10px 0;
 }
 
-
-h2{
-    color:#092532 ;
-    margin: 20px;
+.container h4 {
+    font-family: 'belgrano', sans serif;
+    color: #065446;
+    padding: 5px 0;
 }
 
-p{
-    color: #092532;
-    margin: 10px;
-    font-size: 18px;
-}
-
-.Perfil{
-    width:500px;
-    margin: 0 auto;
-}
-
-footer ul li{
-    display: inline;
-}
-
-
-ul li{
+.container ul {
     list-style: none;
-    margin: 10px;
 }
 
-
-.midias{
-    width: 30px;
-    
+.rede-social {
+    display: flex;
+    justify-content: center;
 }
 
+.rede-social .midias {
+    width: 2.3rem;
+}
 
+.rede-social  li {
+    padding: 5px 10px;
+
+}
+
+@media (min-width: 900px) {
+
+    body {
+        background: #065446;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 60%;
+        
+    }
+
+}
